@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Helya Library</title>
+    <link rel="stylesheet" href="transaksi.css">
+    <script
+    src="https://kit.fontawesome.com/18a120ed20.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="shortcut icon" href="book.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="book1.png" alt="Logo" />
+              </div>
+            <ul>
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="categories.html" class="active">Catalog</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="UTS.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="transaction-form">
+            <h1>Form Transaksi</h1>
+            <form action="#" method="POST">
+                <label for="nama-transaksi">Nama Transaksi:</label>
+                <input type="text" id="nama-transaksi" name="nama-transaksi" required>
+                
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah" required>
+                
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="peminjaman">Peminjaman</option>
+                    <option value="pengembalian">Pengembalian</option>
+                </select>
+                
+                <button type="submit" class="btn">Simpan</button>
+            </form>
+            <a href="DaftarTransaksi.html" class="link">Lihat Daftar Transaksi</a>
+        </section>
+
+        <section class="transaction-list">
+            <h2>Daftar Transaksi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Transaksi</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Peminjaman Buku A</td>
+                        <td>2</td>
+                        <td>Peminjaman</td>
+                    </tr>
+                    <tr>
+                        <td>Pengembalian Buku B</td>
+                        <td>1</td>
+                        <td>Pengembalian</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

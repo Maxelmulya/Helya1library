@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helya Library Catalog</title>
+  <link rel="stylesheet" href="beranda.css" />
+  <script src="https://kit.fontawesome.com/18a120ed20.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="book.png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="book1.png" alt="Library Logo" />
+      </div>
+      <ul>
+        <li><a href="Beranda1.html">Beranda</a></li>
+        <li><a href="categories.html">Catalog</a></li>
+        <li><a href="Profil.html">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="catalog-section">
+    <h2>Catalog</h2>
+    <div class="catalog">
+      <!-- Book Cards -->
+      <div class="book-card" data-title="Matematika Wajib" data-author="Penerbit Erlangga">
+        <img src="stockimage11.jpg" alt="Gambar Buku">
+        <h3>THE CATALYST</h3>
+        <p class="author">JONAR BERGER</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="The Psychology of Money" data-author="Morgan Housel">
+        <img src="stockimage4.png" alt="Gambar Buku">
+        <h3>THE PSYCHOLOGY OF MONEY</h3>
+        <p class="author">Morgan Housel</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="The Power of Habit" data-author="Charles Duhigg">
+        <img src="stockimage5.png" alt="Gambar Buku">
+        <h3>THE POWER OF HABIT</h3>
+        <p class="author">Charles Duhigg</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="Talking to Strangers" data-author="Malcolm Gladwell">
+        <img src="stockimage6.png" alt="Gambar Buku">
+        <h3>TALKING TO STRANGERS</h3>
+        <p class="author">Malcolm Gladwell</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="Physics for Engineers" data-author="John Wiley">
+        <img src="stockimage8.png" alt="Gambar Buku">
+        <h3>THE GEOGRAPHY OF BLISS </h3>
+        <p class="author">ERIC WEINER</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="History of Modern Art" data-author="H. Arnason">
+        <img src="stockimage7.png" alt="Gambar Buku">
+        <h3>HOW TO WIN FRIENDS & INFLUENCE PEOPLE</h3>
+        <p class="author">DALE CARNEGIE</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="Physics for Engineers" data-author="John Wiley">
+        <img src="stockimage8.png" alt="Gambar Buku">
+        <h3>THE GEOGRAPHY OF BLISS </h3>
+        <p class="author">ERIC WEINER</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-card" data-title="History of Modern Art" data-author="H. Arnason">
+        <img src="stockimage7.png" alt="Gambar Buku">
+        <h3>HOW TO WIN FRIENDS & INFLUENCE PEOPLE</h3>
+        <p class="author">DALE CARNEGIE</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- Catalog section end  -->
+
+<!-- cart section -->
+  <section class="cart-section">
+    <h2>Cart</h2>
+    <div class="cart-items"></div>
+    <div class="cart-options">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="Purchase">Purchase</option>
+        <option value="Borrow">Borrow</option>
+      </select>
+      <button id="confirm-order">Confirm Order</button>
+    </div>
+  </section>
+  <!-- cart end section -->
+
+  <!-- table transaksi -->
+  <section class="transactions-section">
+    <h2>Transaction List</h2>
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- table transaksi end -->
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2> Helya <span>Library</span></h2>
+        <img src="librarybuilding.png" alt="Library Building" />
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Space Rental</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Other Policies</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Governance</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Rules & Regulations</a></li>
+          <li><a href="#">About NYPL</a></li>
+          <li><a href="#">Language</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        © Helya library, 2024<br />Helya  Library
+        is a 501(c)(3) | EIN 089533542088
+      </p>
+    </div>
+  </footer>
+  <script src="catalog.js"></script>
+</body>
+</html>
